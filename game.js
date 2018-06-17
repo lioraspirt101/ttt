@@ -12,7 +12,7 @@ const winCombos = [
   [0, 4, 8],  
   [6, 4, 2]
 ];
-
+alert('start');
 const cells = document.querySelectorAll('.cell');
 document.getElementById('replay').addEventListener('click', startGame, false);
 document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
