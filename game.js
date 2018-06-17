@@ -1,3 +1,4 @@
+alert("start");
 var origBoard; 
 var difficult = false;
 var huPlayer = 'X';
@@ -12,7 +13,7 @@ const winCombos = [
   [0, 4, 8],  
   [6, 4, 2]
 ];
-alert('start');
+alert("start1");
 const cells = document.querySelectorAll('.cell');
 document.getElementById('replay').addEventListener('click', startGame, false);
 document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
