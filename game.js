@@ -23,7 +23,7 @@ document.getElementById('letters').addEventListener('change', changeLetter, fals
 function startGame(){
   document.querySelector('.endgame').style.display = 'none';
   origBoard = Array.from(Array(9).keys());
-  alert("start game");
+  alert(cells.length);
   for( var i = 0; i < cells.length; i++){
     cells[i].innerText = ''; 
     cells[i].style.removeProperty('background-color');
