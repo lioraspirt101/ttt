@@ -1,4 +1,3 @@
-alert("start");
 var origBoard; 
 var difficult = false;
 var huPlayer = 'X';
@@ -13,7 +12,6 @@ const winCombos = [
   [0, 4, 8],  
   [6, 4, 2]
 ];
-alert("start1");
 const cells = document.querySelectorAll('.cell');
 document.getElementById('replay').addEventListener('click', startGame, false);
 document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
@@ -23,6 +21,7 @@ document.getElementById('letters').addEventListener('change', changeLetter, fals
 startGame();
 
 function startGame(){
+  alert("start game");
   document.querySelector('.endgame').style.display = 'none';
   origBoard = Array.from(Array(9).keys());
   for( var i = 0; i < cells.length; i++){
