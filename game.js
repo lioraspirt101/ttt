@@ -18,7 +18,7 @@ document.getElementById('difficulty').addEventListener('change', changeDifficult
 
 document.getElementById('letters').addEventListener('change', changeLetter, false);
 
-startGame();
+//startGame();
 
 function startGame(){
   alert("start game");
