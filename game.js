@@ -12,15 +12,20 @@ const winCombos = [
   [0, 4, 8],  
   [6, 4, 2]
 ];
-const cells = document.querySelectorAll('.cell');
-document.getElementById('replay').addEventListener('click', startGame, false);
-document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
+const cells // = document.querySelectorAll('.cell');
+//document.getElementById('replay').addEventListener('click', startGame, false);
+//document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
 
-document.getElementById('letters').addEventListener('change', changeLetter, false);
+//document.getElementById('letters').addEventListener('change', changeLetter, false);
 
 //startGame();
 
 function startGame(){
+  cells = document.querySelectorAll('.cell');
+  document.getElementById('replay').addEventListener('click', startGame, false);
+  document.getElementById('difficulty').addEventListener('change', changeDifficulty, false);
+  document.getElementById('letters').addEventListener('change', changeLetter, false);
+  
   document.querySelector('.endgame').style.display = 'none';
   origBoard = Array.from(Array(9).keys());
   alert(cells.length);
